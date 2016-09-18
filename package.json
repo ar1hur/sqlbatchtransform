@@ -1,0 +1,14 @@
+{
+  "name": "sqlbatchtransform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/SqlBatchTransform",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Arthur Zielinski",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.11.1"
+  }
+}
