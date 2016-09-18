@@ -10,9 +10,9 @@ const fs = require('fs');
 const readStream = fs.createReadStream(filepath);
 const writeStream = fs.createWriteStream(filepath + '.sql');
 
-const voucherQuery = new SqlBatchTransform("UPDATE user SET active = 1 WHERE id IN(?);\n");
+const queryBatch = new SqlBatchTransform("UPDATE user SET active = 1 WHERE id IN(?);\n");
 
-readStream.pipe(voucherQuery).pipe(writeStream);
+readStream.pipe(queryBatch).pipe(writeStream);
 ```
 
 gives you
